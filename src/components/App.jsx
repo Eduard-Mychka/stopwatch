@@ -49,7 +49,7 @@ const App = () => {
           <h1 className="title">Stopwatch</h1>
           <span className="timer">{formatTime()}</span>
           <Buttons
-            reset={handleReset}
+            handleReset={handleReset}
             handleWait={handleWait}
             handleStart={handleStart}
             handleStop={handleStop}
