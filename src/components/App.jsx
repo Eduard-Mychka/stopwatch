@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Fade from 'react-reveal/Fade';
-import Buttons from "./Buttons";
+import Buttons from './Buttons';
 
 const App = () => {
   const [time, setTime] = useState(0)
@@ -11,19 +11,14 @@ const App = () => {
     setTimerOn(false)
   }
 
-  const handleStart = () => {
-    setTimerOn(true)
-  }
-
-  const handleWait = () => {
-    setTimerOn(false)
-  }
-
-  const reset = () => {
+  const handleReset = () => {
     handleStop()
     handleStart()
   }
 
+  const handleStart = () => setTimerOn(true)
+  const handleWait = () => setTimerOn(false)
+  
   const formatTime = () => {
     const getSeconds = ('0' + Math.floor(( time / 1000 ) % 60)).slice(-2)
     const getMinutes = ('0' + Math.floor(( time / 60000 ) % 60)).slice(-2)
@@ -54,7 +49,7 @@ const App = () => {
           <h1 className="title">Stopwatch</h1>
           <span className="timer">{formatTime()}</span>
           <Buttons
-            reset={reset}
+            reset={handleReset}
             handleWait={handleWait}
             handleStart={handleStart}
             handleStop={handleStop}
