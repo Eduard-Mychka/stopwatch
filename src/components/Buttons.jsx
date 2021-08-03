@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { doubleClick } from '../utils'
 
 const Buttons = (props) => (
   <div>
@@ -22,7 +23,7 @@ const Buttons = (props) => (
     <Button 
       className="me-2 wait" 
       variant="secondary" 
-      onDoubleClick={props.handleWait} 
+      onClick={() => doubleClick(props.handleWait)} 
       disabled={props.time === 0}
       title="Wait"
     >
