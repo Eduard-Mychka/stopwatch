@@ -18,5 +18,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 > Open [Live demo](https://eduard-mychka.github.io/stopwatch/)
 
-![cover for app](https://github.com/Eduard-Mychka/stopwatch/blob/master/stopwatch2.png "Cover of simple layout")
+![cover for app](https://github.com/Eduard-Mychka/stopwatch/blob/master/src/assets/images/stopwatch2.png "Cover of simple layout")
 
