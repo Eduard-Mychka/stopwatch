@@ -1,6 +1,7 @@
 let clickCount = 0;
 
 export const doubleClick = (cb) => {
+  
   let singleClickTimer;
   clickCount += 1;
 
@@ -13,4 +14,4 @@ export const doubleClick = (cb) => {
     clickCount = 0;
     cb();
   }
-}
+} 

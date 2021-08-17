@@ -7,7 +7,7 @@ const App = () => {
   const [timerOn, setTimerOn] = useState(false)
 
   const handleStop = () => {
-    setTime(0); 
+    setTime(0);
     setTimerOn(false)
   }
 
@@ -18,10 +18,10 @@ const App = () => {
 
   const handleStart = () => setTimerOn(true)
   const handleWait = () => setTimerOn(false)
-  
+
   const formatTime = () => {
-    const getSeconds = ('0' + Math.floor(( time / 1000 ) % 60)).slice(-2)
-    const getMinutes = ('0' + Math.floor(( time / 60000 ) % 60)).slice(-2)
+    const getSeconds = ('0' + Math.floor((time / 1000) % 60)).slice(-2)
+    const getMinutes = ('0' + Math.floor((time / 60000) % 60)).slice(-2)
     const getHours = ('0' + Math.floor((time / 3600000) % 60)).slice(-2)
 
     return `${getHours} : ${getMinutes} : ${getSeconds}`

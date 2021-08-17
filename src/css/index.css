@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+html {
+  --aqua: aqua
+}
+
 body {  
   margin: 0;
   padding: 0;
@@ -41,7 +45,7 @@ h1,h2,h3,p {
 }
 
 .timer {
-  color: aqua;
+  color: var(--aqua);
   letter-spacing: 2px;
   font-size: 30px;
 }
